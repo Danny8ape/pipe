@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+  <title>Ejercicio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Ejercicio</h2>
+  <form>
+    <div class="form-group">
+      <label>1) Mayusculas</label>
+      <br>
+      <label>Frase 1</label>
+      <br>
+      <label>{{ palabra }}</label>
+      <br>
+      <label> {{ palabra | stringMayus }} </label>
+      <br>
+      <label>Frase 2</label>
+      <br>
+      <label>{{ palabra2 }}</label>
+      <br>
+      <label>{{ palabra2 | stringMayus }}</label>
+    </div>
+
+    <div class="form-group">
+      <label>2) Fecha</label>
+      <br>
+        <label>{{ date }}</label>
+        <br>
+        <label>{{ date | implements}}</label>
+        <br>
+        <label>{{ date2 }}</label>
+        <br>
+        <label>{{ date2 | implements}}</label>
+    </div>
+
+    <div class="form-group">
+        <label>3) Numero: </label>
+        <label>{{ number }}</label>
+        <br>
+        <label>{{ number | numero }}</label>
+    </div>
+    <label>Numero: </label>
+    <label>{{ number2 }}</label>
+    <br>
+        
+    <label>{{ number2 | numero}}</label>
+    <br>
+    <div class="form-group">
+      <br>
+        <label>4) Mayusculas intercaladas</label>
+        <br>
+        
+        <label>Frase 1</label>
+        <br>
+        <label>{{ frase }}</label>
+        <br>
+        <label>{{ frase | stringMayusInter }}</label>
+        <br>
+        <br>
+        <label>Frase 2</label>
+        <br>
+        <label>{{ frase2 }}</label>
+        <br>
+        <label>{{ frase2 | stringMayusInter }}</label>
+    </div>
+  </form>
+</div>
+
+</body>
